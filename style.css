@@ -1,0 +1,67 @@
+/* Same base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Same body style */
+body {
+    background-color: #0a0a0a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', monospace;
+}
+
+/* Center container */
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #39ff14;
+    box-shadow: 0 0 12px #39ff1440;
+}
+
+/* Input field */
+input {
+    background: #0a0a0a;
+    border: 1px solid #39ff14;
+    color: #39ff14;
+    padding: 10px;
+    font-size: 10px;
+    font-family: inherit;
+    outline: none;
+    width: 220px;
+    text-align: center;
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #2a5a2a;
+}
+
+/* Focus effect (subtle, not flashy) */
+input:focus {
+    box-shadow: 0 0 6px #39ff14;
+}
+
+/* Button (same as your game) */
+button {
+    padding: 8px 16px;
+    background: #0a0a0a;
+    border: 1px solid #39ff14;
+    cursor: pointer;
+    color: #39ff14;
+    font-size: 10px;
+    font-family: inherit;
+}
+
+/* Hover */
+button:hover {
+    background: #39ff14;
+    color: #0a0a0a;
+}

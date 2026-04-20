@@ -1,3 +1,6 @@
+const playerName = localStorage.getItem("playerName") || "Player";
+document.querySelector("h2 span").textContent = playerName;
+
 const Table = document.getElementById('game-table')
 const ScoreDisplay = document.getElementById('score')
 
