@@ -11,5 +11,5 @@ btn.addEventListener("click", () => {
 
     localStorage.setItem("playerName", playerName);
 
-    window.location.href = "/game/index.html"; 
+    window.location.href = "./game/index.html"; 
 });
