@@ -106,3 +106,9 @@ td.not-allowed {
     background: #101a10;
     color: #2a5a2a;
 }
+
+#Footer{
+    color: #39ff14;
+    font-size: smaller;
+    letter-spacing: 1px;
+}

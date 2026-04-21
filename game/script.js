@@ -3,6 +3,7 @@ document.querySelector("h2 span").textContent = playerName;
 
 const Table = document.getElementById('game-table')
 const ScoreDisplay = document.getElementById('score')
+const Footer = document.getElementById('Footer')
 
 const primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
 
@@ -59,6 +60,7 @@ function showMultiples(cellValue) {
         cell.textContent = multiple
         cell.classList.add('not-allowed')
     }
+    Footer.textContent = 'Try again.. Be sure not to click primes'
 }
 
 function youLose(cellValue) {
@@ -75,6 +77,7 @@ function youLose(cellValue) {
             cell.removeEventListener("click", clickHandler);
         }
     }
+    Footer.textContent = 'You Lose... Click Reset to try again'
 }
 
 function youWin() {
@@ -82,4 +85,5 @@ function youWin() {
     cell.style.background = '#003a00';
     cell.style.color = '#39ff14';
     showMultiples(1)
+    Footer.textContent = 'You Win... Click Reset to try if your lucky again'
 }
